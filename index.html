@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="logo-icon" href="icon.png">
+    <title>BeatStream - Login</title>
+
+    <script src = "index-script.js"></script>
+    <link rel="stylesheet" href="index-style.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo"><img src="logo.svg" class="logo-icon">BEATSTREAM</a>
+        <a class="home"><b>Home</b></a>
+        <input type="text" placeholder="Search for artists, albums, playlists.">
+        <button class="signin" id="signin"><b>Sign In</b></button>
+        <button class="create" id="create"><b>Create Account</b></button>
+    </header>
+
+    <div class="interface">
+        <h2 style="padding-bottom: 20px;">Discover Albums and Playlists</h2>
+        <h3>Albums</h3>
+    </div>
+
+    <div class = "album-cover">
+        <button class="album-btn">
+            <div class = "cover">
+                <img src = "bruno.jpg">
+                <img src = "play.svg" class = "overlay">
+            </div>
+            <div class = "track">Pop / R&B / Funk</div>
+            <div class = "artist">Bruno Mars</div>
+        </button>
+
+        <button class="album-btn">
+            <div class = "cover">
+                <img src = "abel.jpg">
+                <img src = "play.svg" class = "overlay">
+                    </div>
+            <div class = "track">Dawn FM</div>
+            <div class = "artist">The Weeknd</div>
+        </button>
+
+        <button class="album-btn">
+            <div class = "cover">
+                <img src = "aven.jpg">
+                <img src = "play.svg" class = "overlay">
+            </div>
+            <div class = "track">Indie / Alternative</div>
+            <div class = "artist">Avenoir</div>
+        </button>
+
+        <button class="album-btn">
+            <div class = "cover">
+                <img src = "tyler.jpg">
+                <img src = "play.svg" class = "overlay">
+            </div>
+            <div class = "track">Hip-Hop / Rap</div>
+            <div class = "artist">Tyler, The Creator</div>
+        </button>
+
+        <button class="album-btn">
+            <div class = "cover">
+                <img src = "dawg.jpg">
+                <img src = "play.svg" class = "overlay">
+            </div>
+            <div class = "track">Playlist ni Justin</div>
+            <div class = "artist">Justin Nabunturan</div>
+        </button>
+    </div>
+
+    <div class="form" id="loginForm">
+        <div class="form-content">
+            <div class = "form-header">
+                <h2>Sign In</h2>
+                <span class="close" onclick="closeForm('loginForm')">&times;</span>
+            </div>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button class="submit">Login</button>
+        </div>
+    </div>
+
+    <div class="form" id="signupForm">
+        <div class="form-content">
+            <div class="form-header">
+                <h2>Create Account</h2>
+                <span class="close" onclick="closeForm('signupform')">&times;</span>
+            </div>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button class="submit">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>

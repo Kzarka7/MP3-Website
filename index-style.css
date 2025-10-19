@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    color: white;
+    font-family: Inter, sans-serif;
+    background-image: linear-gradient(
+        to bottom left, 
+        #04010a 0%, 
+        #171438 60%, 
+        #2a2362 100%
+    );
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #140e30;
+    display: flex;
+    align-items: center;
+    padding: 0 450px;
+    justify-content: space-between;
+    font-size: 95%;
+    border-bottom: solid #515151 1px;
+}
+
+a, button {
+    text-decoration: none;
+    color: #F8F8FF;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    font-size: 120%;
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+}
+
+.home {
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid white 2px;
+}
+
+input {
+    padding: 7px 15px 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 105%;
+    background-color: #262058;
+    color: white;
+    width: 450px;
+    height: 30px;
+} 
+
+::placeholder {
+    color: #919191;
+}
+
+.create, .logout {
+    background-color: #5865f2b7;
+    color: white;
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout {
+    width: 100px;
+    margin-left: 108px;
+}
+
+.home:hover, .signin:hover {
+    color: #c7c7c7;
+}
+
+.create:hover, .logout:hover {
+    background-color: #322a74;
+    color: #c7c7c7;
+}
+
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    padding: 0;
+}
+
+.interface {
+    padding: 0 450px;
+    font-size: 110%;
+}
+
+.interface h2 {
+    margin-top: 30px;
+    border-bottom: solid #2f353d 1px;
+}
+
+.album-cover {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 180px);
+    padding: 0 450px;
+    justify-content: space-between;
+}
+
+.album-cover button, .album-cover a {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.track {
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.artist {
+    color: #c7c7c7;
+    font-size: 14px;
+}
+
+.cover {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cover img:first-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    filter: invert(1);
+}
+
+.cover:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); 
+}
+
+.cover:hover img:first-child {
+    opacity: 0.5;
+}
+
+.cover:hover .overlay {
+    opacity: 0.9;
+}
+
+.form {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(109, 109, 109, 0.1 );
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content {
+    border-radius: 10px;
+    width: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    border: solid #515151 1px;
+    transform: translateY(-50px);
+    background-image: linear-gradient(
+        to bottom left, 
+        #04010a 0%, 
+        #0b091b 10%, 
+        #0e0b21 20%, 
+        #19153c 100%
+    );
+}
+
+.form-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px 0 40px;
+    box-sizing: border-box;
+}
+
+.close {
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    align-self: center;
+}
+
+.close:hover {
+    color: white;
+}
+
+.form-content input {
+    padding: 10px;
+    border: none;
+    border-bottom: solid #606060 1px;
+    border-radius: 0;
+    background: none;
+    color: white;
+    font-size: 14px;
+    width: 300px;
+    outline: none;
+}
+
+.form-content input:focus {
+    border-bottom: 1px solid white;
+}
+
+.submit {
+    background: white;
+    color: #121212;
+    padding: 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 50px 0;
+    width: 80%;
+}
+
+.submit:hover {
+    background: #c7c7c7;
+}

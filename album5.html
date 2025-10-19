@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="icon" type="logo-icon" href="icon.png">
+    <title> Playlist ni Justin | BeatStream </title>
+
+    <script src = "script.js" defer></script>
+    <link rel = "stylesheet" href = "style.css">
+
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        #grad {
+            background-image: linear-gradient(
+            to bottom,
+            #50735d 0%,
+            #50735d 0.5%,  
+            #0b091b 40%, 
+            #0e0b21 60%, 
+            #19153c 100%
+        );
+    }
+    </style>
+
+    <script>
+        const playlist = [
+            { title: "Libre Sampak", artist: "NoPetsAllowed", src: "jn1.mp3", cover: "dawg.jpg" },
+            { title: "Happy Birthday", artist: "Carlos Agassi", src: "jn2.mp3", cover: "dawg.jpg" },
+            { title: "LUPAYPAY", artist: "Haring Manggi", src: "jn3.mp3", cover: "dawg.jpg" },
+            { title: "Pakilig", artist: "Midnasty", src: "jn4.mp3", cover: "dawg.jpg" },
+            { title: "Bisag Asa", artist: "Midnasty", src: "jn5.mp3", cover: "dawg.jpg" },
+        ];
+    </script>
+
+</head>
+
+<body>
+
+    <header class = "header">
+        <a href = "index1.html" class = "logo"><img src = "logo.svg" class = "logo-icon">BEATSTREAM</a>
+        <a href = "index1.html" class = "home active"><b>Home</b></a>
+        <input type = "text" placeholder = "Search for artists, albums, playlists.">
+        <a href = "index.html" class = "logout"><b>Logout</b></a>
+    </header>
+
+    <div class="container">
+    
+        <div class="sidebar">   
+            <h4>Your Library</h4>
+            <div class="note">
+                <div class="toggle active">Albums</div>
+                <div class="toggle">Playlists</div>
+        </div>
+
+
+            <div class="library">
+                <a href="album1.html" class="list">
+                    <div class="img-container">
+                        <img src="bruno.jpg" alt="Bruno Mars">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    Bruno Mars
+                </a>
+
+                <a href="album2.html" class="list">
+                    <div class="img-container">
+                        <img src="abel.jpg" alt="Dawn FM">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    Dawn FM
+                </a>
+
+                <a href="album3.html" class="list">
+                    <div class="img-container">
+                        <img src="aven.jpg" alt="Avenoir">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    Avenoir
+                </a>
+
+                <a href="album4.html" class="list">
+                    <div class="img-container">
+                        <img src="tyler.jpg" alt="Tyler, The Creator">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    Tyler, The Creator
+                </a>
+
+                <a class="list" style="background-color: #262058; font-weight: bold;">
+                    <div class="img-container">
+                        <img src="dawg.jpg" alt="Playlist Ni Justin">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    Playlist Ni Justin
+                </a>
+            </div>
+        </div>
+
+        <div class="middle" id = "grad">
+            <div class="album-header">
+                <img src="dawg.jpg">
+                <div class="album-info">
+                    <p>Playlist</p>
+                    <h1>Playlist ni Justin</h1>
+                    <p>5 songs, 15 min 58 sec</p>
+                </div>
+            </div>
+
+            <div class="tracklist">
+                <div class="track-row header">
+                    <div class="track-num">#</div>
+                    <div class="track-title">Title</div>
+                    <div class="track-duration">Duration</div>
+                </div>
+
+                <div class="track-row">
+                    <div class="track-num">1</div>
+                    <div class="track-title">
+                        <p class="title">Libre Sampak</p>
+                        <p class="artist">NoPetsAllowed</p>
+                    </div>
+                    <div class="track-duration">3:20</div>
+                </div>
+
+                <div class="track-row">
+                    <div class="track-num">2</div>
+                    <div class="track-title">
+                        <p class="title">Happy Birthday</p>
+                        <p class="artist">Carlos Agassi</p>
+                    </div>
+                    <div class="track-duration">2:22</div>
+                </div>
+
+                <div class="track-row">
+                    <div class="track-num">3</div>
+                    <div class="track-title">
+                        <p class="title">LUPAYPAY</p>
+                        <p class="artist">Haring Manggi</p>
+                    </div>
+                    <div class="track-duration">3:03</div>
+                </div>
+
+                <div class="track-row">
+                    <div class="track-num">4</div>
+                    <div class="track-title">
+                        <p class="title">Pakilig</p>
+                        <p class="artist">Midnasty</p>
+                    </div>
+                    <div class="track-duration">4:13</div>
+                </div>
+
+                <div class="track-row">
+                    <div class="track-num">5</div>
+                    <div class="track-title">
+                        <p class="title">Bisag Asa</p>
+                        <p class="artist">Midnasty</p>
+                    </div>
+                    <div class="track-duration">2:31</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="dawg.jpg">
+            <h2>song-title</h2>
+            <p>artist-name</p>
+
+            <audio controls id="song">
+                <source src="jn1.mp3">
+                <source src="jn2.mp3">
+                <source src="jn3.mp3">
+                <source src="jn4.mp3">
+                <source src="jn5.mp3">
+            </audio>
+        
+        </div>
+    </div>
+
+</body>
+</html>

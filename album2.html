@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="icon" type="logo-icon" href="icon.png">
+    <title> Dawn FM | BeatStream </title>
+
+    <script src = "script.js" defer></script>
+    <link rel = "stylesheet" href = "style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        #grad {
+            background-image: linear-gradient(
+            to bottom,
+            #083040 0%,
+            #083040 0.5%,  
+            #0b091b 40%, 
+            #0e0b21 60%, 
+            #19153c 100%
+        );
+    }
+    </style>
+
+    <script>
+        const playlist = [
+            { title: "Gasoline", artist: "The Weeknd", src: "the1.mp3", cover: "abel.jpg" },
+            { title: "How Do I Make You Love Me?", artist: "The Weeknd", src: "the2.mp3", cover: "abel.jpg" },
+            { title: "Sacrifice", artist: "The Weeknd", src: "the3.mp3", cover: "abel.jpg" },
+            { title: "Out of Time", artist: "The Weeknd", src: "the4.mp3", cover: "abel.jpg" },
+            { title: "Less Than Zero", artist: "The Weeknd", src: "the5.mp3", cover: "abel.jpg" },
+        ];
+    </script>
+
+</head>
+
+<body>
+
+    <header class = "header">
+        <a href = "index1.html" class = "logo"><img src = "logo.svg" class = "logo-icon">BEATSTREAM</a>
+        <a href = "index1.html" class = "home active"><b>Home</b></a>
+        <input type = "text" placeholder = "Search for artists, albums, playlists.">
+        <a href = "index.html" class = "logout"><b>Logout</b></a>
+    </header>
+
+    <div class="container">
+    
+        <div class="sidebar">   
+            <h4>Your Library</h4>
+            <div class="note">
+                <div class="toggle active">Albums</div>
+                <div class="toggle">Playlists</div>
+        </div>
+            <div class="library">
+                <a href="album1.html" class="list">
+                    <div class="img-container">
+                        <img src="bruno.jpg" alt="Bruno Mars">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    Bruno Mars
+                </a>
+
+                <a class="list" style="background-color: #262058; font-weight: bold;">
+                    <div class="img-container">
+                        <img src="abel.jpg" alt="Dawn FM">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    Dawn FM
+                </a>
+
+                <a href="album3.html" class="list">
+                    <div class="img-container">
+                        <img src="aven.jpg" alt="Avenoir">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    Avenoir
+                </a>
+
+                <a href="album4.html" class="list">
+                    <div class="img-container">
+                        <img src="tyler.jpg" alt="Tyler, The Creator">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    Tyler, The Creator
+                </a>
+
+                <a href="album5.html" class="list">
+                    <div class="img-container">
+                        <img src="dawg.jpg" alt="Playlist Ni Justin">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    Playlist Ni Justin
+                </a>
+            </div>
+        </div>
+
+        <div class="middle" id = "grad">
+            <div class="album-header">
+                <img src="abel.jpg">
+                <div class="album-info">
+                    <p>Album</p>
+                    <h1>Dawn FM</h1>
+                    <p><b>The Weeknd</b> • 2022 • 5 songs, 17 min 15 sec</p>
+                </div>
+            </div>
+
+            <div class="tracklist">
+                <div class="track-row header">
+                    <div class="track-num">#</div>
+                    <div class="track-title">Title</div>
+                    <div class="track-duration">Duration</div>
+                </div>
+
+                <div class="track-row">
+                    <div class="track-num">1</div>
+                    <div class="track-title">
+                        <p class="title">Gasoline</p>
+                        <p class="artist">The Weeknd</p>
+                    </div>
+                    <div class="track-duration">3:31</div>
+                </div>
+
+                <div class="track-row">
+                    <div class="track-num">2</div>
+                    <div class="track-title">
+                        <p class="title">How Do I Make You Love Me?</p>
+                        <p class="artist">The Weeknd</p>
+                    </div>
+                    <div class="track-duration">3:33</div>
+                </div>
+
+                <div class="track-row">
+                    <div class="track-num">3</div>
+                    <div class="track-title">
+                        <p class="title">Sacrifice</p>
+                        <p class="artist">The Weeknd</p>
+                    </div>
+                    <div class="track-duration">3:06</div>
+                </div>
+
+                <div class="track-row">
+                    <div class="track-num">4</div>
+                    <div class="track-title">
+                        <p class="title">Out of Time</p>
+                        <p class="artist">The Weeknd</p>
+                    </div>
+                    <div class="track-duration">3:34</div>
+                </div>
+
+                <div class="track-row">
+                    <div class="track-num">5</div>
+                    <div class="track-title">
+                        <p class="title">Less Than Zero</p>
+                        <p class="artist">The Weeknd</p>
+                    </div>
+                    <div class="track-duration">3:31</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="abel.jpg">
+            <h2>song-title</h2>
+            <p>artist-name</p>
+
+            <audio controls id="song">
+                <source src="the1.mp3">
+                <source src="the2.mp3">
+                <source src="the3.mp3">
+                <source src="the4.mp3">
+                <source src="the5.mp3">
+            </audio>
+        </div>
+    </div>
+
+
+</body>
+</html>
